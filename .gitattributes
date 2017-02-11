@@ -16,8 +16,4 @@
 *.rtf	 diff=astextplain
 *.RTF	 diff=astextplain
 
-<<<<<<< HEAD
 *.rb linguist-language=Python
-=======
-*.rb linguist-language=Java
->>>>>>> origin/master
