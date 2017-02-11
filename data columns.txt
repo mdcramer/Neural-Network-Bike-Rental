@@ -1,0 +1,82 @@
+yr
+holiday
+temp <- scaled
+hum <- scaled
+windspeed <- scaled
+casual		<- scaled	<- target
+registered	<- scaled	<- target
+cnt			<- scaled	<- target
+season_1 <- dummy
+season_2
+season_3
+season_4
+weathersit_1 <- dummy
+weathersit_2
+weathersit_3
+weathersit_4
+mnth_1 <- dummy
+mnth_2
+mnth_3
+mnth_4
+mnth_5
+mnth_6
+mnth_7
+mnth_8
+mnth_9
+mnth_10
+mnth_11
+mnth_12
+hr_0 <- dummy
+hr_1
+hr_2
+hr_3
+hr_4
+hr_5
+hr_6
+hr_7
+hr_8
+hr_9
+hr_10
+hr_11
+hr_12
+hr_13
+hr_14
+hr_15
+hr_16
+hr_17
+hr_18
+hr_19
+hr_20
+hr_21
+hr_22
+hr_23
+weekday_0 <- dummy
+weekday_1
+weekday_2
+weekday_3
+weekday_4
+weekday_5
+weekday_6
+
+
+- instant: record index
+- dteday : date
+- season : season (1:springer, 2:summer, 3:fall, 4:winter)
+- yr : year (0: 2011, 1:2012)
+- mnth : month ( 1 to 12)
+- hr : hour (0 to 23)
+- holiday : weather day is holiday or not (extracted from [Web Link])
+- weekday : day of the week
+- workingday : if day is neither weekend nor holiday is 1, otherwise is 0.
++ weathersit :
+- 1: Clear, Few clouds, Partly cloudy, Partly cloudy
+- 2: Mist + Cloudy, Mist + Broken clouds, Mist + Few clouds, Mist
+- 3: Light Snow, Light Rain + Thunderstorm + Scattered clouds, Light Rain + Scattered clouds
+- 4: Heavy Rain + Ice Pallets + Thunderstorm + Mist, Snow + Fog
+- temp : Normalized temperature in Celsius. The values are derived via (t-t_min)/(t_max-t_min), t_min=-8, t_max=+39 (only in hourly scale)
+- atemp: Normalized feeling temperature in Celsius. The values are derived via (t-t_min)/(t_max-t_min), t_min=-16, t_max=+50 (only in hourly scale)
+- hum: Normalized humidity. The values are divided to 100 (max)
+- windspeed: Normalized wind speed. The values are divided to 67 (max)
+- casual: count of casual users
+- registered: count of registered users
+- cnt: count of total rental bikes including both casual and registered
